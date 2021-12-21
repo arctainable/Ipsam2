@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+		<title>잎샘 관리자</title>
+	
+		<!-- 부트스트랩 -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<!-- 폰트어썸 -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		
+		<link href="../css/admincommon.css" rel="stylesheet">
+		
+		<link href="../css/adminsublayout.css" rel="stylesheet">
+		
+		<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+		<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+		<!--[if lt IE 9]>
+		      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+		<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="adminheader">
+				<nav>
+					<div class="container">
+						<div class="pull-left adminmaingo">
+							<a href="../admin/admin.html">관리자 메인페이지 가기</a>
+						</div>
+						<div class="pull-right">
+							<a href="">
+								<img class="sitelogo" src="../img/ipSam.png">
+							</a>
+							<span>
+							<i class="fas fa-user"></i> 관리자 OO 님
+							</span>
+							<a href="">로그아웃하기</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</nav>
+			</div>
+ 		   <script src="../js/scrollup.js"></script>
+			<button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>
+			<div class="clearboth"></div>
+		</header>
+		
+		<section class="adminsection ">
+			<div class="container admincontainer ">
+				<div class="row mt80">
+					<div class="col-md-3">
+						<div class="amdinmenudiv">
+							<div class="amdinmenu">
+								<a href="../admin/project-manger.html">프로젝트 관리하기</a>
+							</div>
+							<div class="amdinmenu">
+								<a href="../admin/member-manger.html">회원 관리하기</a>
+							</div>
+							<div class="amdinmenu">
+								<a href="../admin/notice-manger.html">게시물 관리하기</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="adminbord">
+							<div class="">
+								<div class="pull-left">
+									<h3>프로젝트 상세보기</h3>
+								</div>
+								<div class="pull-right">
+									<p class="projectview-category">프로젝트 카테고리 : 'adfa'</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="mt10">
+								<table class="project-admin-table">
+									<colgroup>
+										<col width="15%">
+										<col width="40%">
+										<col width="15%">
+										<col width="30%">
+									</colgroup>
+									<tr>
+										<td colspan="4">'프로젝트 이름~어쩌구'</td>
+									</tr>
+									<tr>
+										<th>프로젝트번호</th>
+										<td>1</td>
+										<th>신청 날짜</th>
+										<td>2021.05.25</td>
+									</tr>
+									<tr>
+										<th>창작자</th>
+										<td>'닉네임어쩌구'('아이디horang2')</td>
+										<th>공개 날짜</th>
+										<td>2021.05.29</td>
+									</tr>
+									<tr>
+										<th>프로젝트상태</th>
+										<td>신청대기중</td>
+										<th>목표 날짜</th>
+										<td>2021.05.29</td>
+									</tr>
+									<tr>
+										<th>후원자</th>
+										<td><a href="">0명</a></td>
+										<th>목표금액</th>
+										<td>1,000,000원</td>
+									</tr>
+									<tr>
+										<th>계좌번호</th>
+										<td>352-13215-153184-32</td>
+										<th>현재금액</th>
+										<td>0원</td>
+									</tr>
+									<tr>
+										<td class="project-thumbnail" colspan="2" rowspan="2"><img  src="../img/1q87.jpg"></td>
+										<th>창작자소개글</th>
+										<td>안녕하세요 감사해요 잘있어요 다시만나요</td>
+									</tr>
+									<tr>
+										<th>프로젝트 소개</th>
+										<td>저희 프로젝트는 이러이러하고 저러저러합니다</td>
+									</tr>
+								</table>
+								<div role="tabpanel" class="mt20">
+									<ul class="nav nav-tabs project-contnet-tab" role="tablist">
+										<li role="presentation" class="active">
+											<a href="#content" aria-controls="content" role="tab" data-toggle="tab">프로젝트 설명</a>
+										</li>
+										<li role="presentation">
+											<a href="#rewards" aria-controls="rewards" role="tab" data-toggle="tab">프로젝트 리워드</a>
+										</li>
+									</ul>
+								
+									<div class="tab-content mt20">
+									    <div role="tabpanel" class="tab-pane fade in active" id="content">
+											<div class="project-content">
+												<img src="../img/e00aa4944e08ec3e0f1c5dcfc2420133_151206.jpg">
+											</div>
+										</div>
+									    <div role="tabpanel" class="tab-pane fade" id="rewards">
+											<table class="table table-hover" >
+												<tr>
+													<th>리워드 번호</th>
+													<th>리워드 내용</th>
+													<th>리워드 금액</th>
+													<th>선택한 사람 수</th>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>상품 1box</td>
+													<td>1,000원</td>
+													<td>13명</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>상품 2box</td>
+													<td>5,000원</td>
+													<td>2명</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>상품 2box + 크레딧 이름</td>
+													<td>10,000원</td>
+													<td>19명</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>상품 3box + 크레딧 이름 +선공개</td>
+													<td>100,000원</td>
+													<td>23명</td>
+												</tr>
+											</table>
+									    </div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		
+		<footer>
+		</footer>
+	</body>
+</html>

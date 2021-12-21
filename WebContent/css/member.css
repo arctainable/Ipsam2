@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.logindiv{
+	width: 450px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 32px;
+    margin: 100px auto 80px;
+}
+.logindiv h3{
+	font-size:24px;
+	margin-bottom:36px;
+}
+
+.login-info-div{
+	border:1px solid #dbdbdb;
+	border-radius:5px;
+	background:#fff;
+	width:100%;
+	height:44px;
+	margin-bottom:24px;
+	font-size:14px;
+	padding:0px 20px;
+}
+.login-info-div input{
+	width:100%;
+	border:0px;
+	height:100%;
+	outline:none;
+}
+.login-submit-div a{
+	display:inline-block;
+	width:100%;
+	text-align: center;
+	padding:10px 0px;
+	background:#ff9696;
+	border-radius:5px;
+	color:#fff;
+	font-size:16px;
+}
+.small-join {
+	text-align: center;
+}
+.small-join span{
+	font-size: 11px;
+	color:#c7c7c7;
+}
+.small-join span a{
+	color:#27a3ff;
+}
+.the_line{
+	border:1px solid #dbdbdb;
+	margin:15px 0px;
+}
+
+
+/* 회원가입 */
+.join-uptext{
+	margin-bottom:10px;
+}
+
+.join-checkbox-label input{
+	width:16px;
+	height:16px;
+}
+.join-checkbox-label span{
+	font-weight:400;
+	margin-left:10px;
+	font-size:13px;
+	vertical-align:3px;
+}
+.join-checkbox ul li div a{
+	font-size:11px;
+	color:#27a3ff;
+	vertical-align:-2px;
+}
+
+/* 회원가입 완료 */
+.join-complete{
+	text-align:center;
+}
+.congratu{
+	color:#ff9696;
+}
+//.joincomplete a{
+	display:inline-block;
+	padding:10px 20px;
+	color:#fff;
+	background:#ff9696;
+	margin:10px 0px;
+}
+
+
+.go_login_b{
+color: #FF9696;
+    background: #ffffff;
+    border: 1px solid #FF9696;
+    padding: 15px 60px;
+    margin: 20px;
+    font-size: 16px;}
+    
+    
+ .go_main_b{   
+        color: #fff;
+    background: #FF9696;
+    border: none;
+    padding: 15px 50px;
+    margin: 20px;
+    font-size: 16px;}

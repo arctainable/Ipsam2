@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+		<title>크라우드 펀딩</title>
+	
+		<!-- 부트스트랩 -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<!-- 폰트어썸 -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		
+		<link href="../css/common.css" rel="stylesheet">
+		<link href="../css/main.css" rel="stylesheet">
+		
+		
+		<link href="../css/member.css" rel="stylesheet">
+		
+		<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+		<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+		<!--[if lt IE 9]>
+		      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+		<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+		<script src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<nav>
+					<div class="container">
+						<div class="pull-left">
+							<a href="">
+								<img class="sitelogo" src="../img/ipSam.png">
+							</a>
+							<ul class="list-inline vmfhapsb">
+								<li><a href="../project/projectlist.html">프로젝트 목록</a></li>
+								<li><a href="">프로젝트 올리기</a></li>
+							</ul>
+						</div>
+						<div class="pull-right">
+							<ul class="list-inline loginmenu">
+								<li>
+									<div class="serchprodiv">
+										<form>
+											<div class="header-search-div"><i class="fas fa-search"></i>
+												<input type="text" class="header-search" placeholder="어떤 프로젝트를 찾으시나요?">
+											</div>
+										</form>
+									</div>
+								</li>
+								<li>
+									<ul class="list-inline">
+										<li><a href="../login/login.html">로그인</a></li>
+										<li><a href="../member/join.html">회원가입</a></li>
+										<li><img class="user-photo" src="../img/user-account.png" ></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</nav>
+			</div>
+ 		   <script src="../js/scrollup.js"></script>
+			<button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>
+			<div class="clearboth"></div>
+		</header>
+		
+		<script type="text/javascript" src="../js/emptycheck.js"></script>
+		<script type="text/javascript">
+			function goJoin(){
+				if(!chekEmpty(loginform.id,"아이디를 입력해주세요")) return;
+				if(!chekEmpty(loginform.nickname,"닉네임을 입력해주세요")) return;
+				if(!chekEmpty(loginform.pw,"비밀번호를를 입력해주세요")) return;
+				if(!chekEmpty(loginform.pw2,"비밀번호확인을 입력해주세요")) return;
+				if(!chekEmpty(loginform.email,"이메일을 입력해주세요")) return;
+				
+				if(loginform.pw.value != loginform.pw2.value){
+					alert("비밀번호를 다시 확인해주세요");
+					loginform.pw2.value="";
+					loginform.pw2.focus();
+				}
+				
+				if($(loginform.ipsamok).is(":checked")==false){
+					alert("잎샘 이용 약관 동의를 체크하세요")
+					$(loginform.ipsamok).focus();
+					return ;
+				}
+				if($(loginform.ipsamok2).is(":checked")==false){
+					alert("개인 정보 수집,이용 동의를 체크하세요")
+					$(loginform.ipsamok3).focus();
+					return ;
+				}
+				if($(loginform.ipsamok3).is(":checked")==false){
+					alert("만 14세 이상 동의를 체크하세요")
+					$(loginform.ipsamok3).focus();
+					return ;
+				}
+				
+				location.href="join-ok.html";
+			}
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$("#allcheck").on("click",function(){
+					if($("#allcheck").prop("checked")){
+						$("#ipsamok").prop("checked",true);
+						$("#ipsamok2").prop("checked",true);
+						$("#ipsamok3").prop("checked",true);
+					}else{
+						$("#ipsamok").prop("checked",false);
+						$("#ipsamok2").prop("checked",false);
+						$("#ipsamok3").prop("checked",false);
+					}
+				})
+			});
+		</script>
+		
+		<section>
+			<div class="container">
+				<div class="logindiv center-block mt40">
+					<h3>가입하기</h3>
+					<form name="loginform">
+						<div class="join-uptext">아이디</div>
+						<div class="login-info-div">
+							<input type="text" name="id" placeholder="사용하실 아이디를 입력해주세요" >
+						</div>
+						<div class="join-uptext">닉네임</div>
+						<div class="login-info-div">
+							<input type="text" name="nickname" placeholder="사용하실 닉네임을 입력해주세요" >
+						</div>
+						<div class="join-uptext">비밀번호</div>
+						<div class="login-info-div">
+							<input type="password" name="pw" placeholder="사용하실 비밀번호를 입력해주세요">
+						</div>
+						<div class="login-info-div">
+							<input type="password" name="pw2" placeholder="비밀번호를 확인합니다">
+						</div>
+						<div class="join-uptext">이메일</div>
+						<div class="login-info-div">
+							<input type="email" name="email" placeholder="사용하실 이메일을 입력해주세요">
+						</div>
+						<div class="">
+							<label for="allcheck" class="pointer join-checkbox-label pull-left">
+								<input id="allcheck" type="checkbox" name="allcheck"><span>전체 동의</span>
+							</label>
+							<div class="clearfix"></div>
+						</div>
+						<div class="the_line"></div>
+						<div class="join-checkbox">
+							<ul class="list-unstyled">
+								<li>
+									<label for="ipsamok" class="pointer join-checkbox-label pull-left">
+										<input id="ipsamok" type="checkbox" name="ipsamok"><span>잎샘 이용 약관 동의</span>
+									</label>
+									<div class="pull-right">
+										<a id="ipsamok-btn" class="pointer">내용보기</a>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								<li>
+									<label for="ipsamok2" class="pointer join-checkbox-label pull-left">
+										<input id="ipsamok2" type="checkbox" name="ipsamok2"><span>개인 정보 수집,이용 동의</span>
+									</label>
+									<div class="pull-right">
+										<a id="ipsamok2-btn" class="pointer">내용보기</a>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								<li>
+									<label for="ipsamok3" class="pointer join-checkbox-label pull-left">
+										<input id="ipsamok3" type="checkbox" name="ipsamok3"><span>만 14세 이상입니다.</span>
+									</label>
+									<div class="clearfix"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="login-submit-div mt40">
+							<a onclick="goJoin()" class="pointer">가입하기</a>
+						</div>
+					</form>
+					<div class="mt10 small-join">
+						<span>이미 잎샘 계정이 있다면? <a href="../login/login.html">로그인하러가기</a></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" >
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body" style="overflow:hidden;">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../js/ipsamperinfo.js"></script>
+
+		
+		<footer>
+		</footer>
+	</body>
+</html>

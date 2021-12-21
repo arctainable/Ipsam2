@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
+
+body {font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('※'),
+    url('../fonts/Roboto-Regular.eot'),
+    url('../fonts/Roboto-Regular.eot#iefix') format('embedded-opentype')
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.otf') format('opentype'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+body{
+	position:relative;
+}
+
+/* 관리자 헤더 */
+.adminheader{
+	position: absolute;
+	z-index:99;
+    background: #ffffff;
+    min-height: 60px;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px
+}
+.adminmaingo a{
+	vertical-align:-8px;
+}
+
+.admin_header_a{
+	display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #ff9696;
+}
+
+.admin_header_span{
+	display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.admin_logout{
+	background: #ff9696;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+.sitelogo{
+	height:55px;
+}
+.adminsection{
+	background:#f6f6f6;
+}
+.admincontainer{
+	min-height:400px;
+	padding-bottom:80px;
+}
+.amdinmenudiv{
+	padding:10px;
+	background:#fff;
+	border: 1px solid #dbdbdb;
+	border-radius:5px;
+}
+.amdinmenu{
+	border-bottom:1px solid #dbdbdb;
+	background: #fff;
+	text-align:center;
+}
+.amdinmenu a{
+	display: inline-block;
+	padding:15px 0px;
+	width:100%;
+	margin:10px 0px;
+//	border-radius:15px;
+	color:#969696;
+}
+.amdinmenu a:hover{
+	background:#ffcfcf47;
+	color:#333;
+}
+.adminbord {
+	width:900px;
+	padding:20px;
+	background:#fff;
+	border: 1px solid #dbdbdb;
+	border-radius:5px;
+	min-height:450px;
+}
+
+/* 페이지네이션 */
+.pagenation{
+	text-align:center;
+}
+.pagenation a{
+	display: inline-block;
+	padding:1px 3px;
+}
+/* 위로가기버튼 */
+.ac-sub-go-top{
+  width: 30px;
+  height: 30px;
+  bottom:calc(50% - 35px);
+  position: fixed;
+  right: calc((100% - 1200px)/ 2 - 80px);
+  display: inline-block;
+  background:rgba(255,255,255,0.7);
+  border: none;
+  background-size: 50%;
+  display: none;
+}
+
+.pointer{
+	cursor:pointer;
+}
+.mt90{ margin-top:90px; }
+.mt80{ margin-top: 80px; }
+.mt40{ margin-top:40px; }
+.mt30{ margin-top:30px; }
+.mt20{ margin-top:20px; }
+.mt10{ margin-top:10px; }
+.mt5{ margin-top:5px; }
+.mr5{ margin-right:5px; }
+.ml30{ margin-left: 30px; }
+.ml20{ margin-left: 20px; }
+.ml70{ margin-left: 70px; }
+.ml10{ margin-left:10px; }
+.m0at{ margin: 0 auto; }
+
+.main_color{color:#ff9696;}
+
+.admin_main_box{
+	width: 180px;
+    border: 1px solid #ff9696;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;}
+
+.grade_pointer{
+	background: #ff9696;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+}

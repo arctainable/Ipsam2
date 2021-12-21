@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* 프로젝트 관리 리스트 */
+
+.project-countdiv{
+	text-align: right;
+}
+
+.admin-project-dorpbtn{
+	display:inline-block;
+}
+.serchprodiv{
+	display: inline-block;
+	vertical-align:-1px;
+}
+.admin-search-div{
+	background:#eee;
+	border-radius:5px;
+	padding:6px 6px;
+}
+.admin-search{
+	width: 180px;
+    background: rgba(0,0,0,0);
+    border: 0px;
+	outline:none;
+}
+
+.project-countdiv span{
+	color:#ff9696;
+}
+.project-stat-cheage{
+	margin-top:8px;
+}
+.project-stat-cheage select{
+	font-size: 14px;
+	padding: 7px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.project-stat-cheage a{
+	display:inline-block;
+	background:#ff9696;
+	color:#fff;
+	padding: 7px 10px;
+	border-radius:5px;
+}
+.admin-project-list-table{
+	width: 100%;
+}
+.admin-project-list-table tr td,
+.admin-project-list-table tr th {
+	text-align: center;
+	padding:10px 0px;
+}
+.admin-project-list-table tr th{
+	border-top:1px solid #333;
+	border-bottom:1px solid #dbdbdb;
+}
+.admin-project-list-table tr td{
+	border-bottom:1px solid #dbdbdb;
+}
+.admin-project-list-table tr td img{
+	height: 50px;
+}
+.admin-project-list-table tr td a:hover{
+	color:#ff9696;
+}
+
+/* 회원관리 페이지 */
+.admin-member-list-table{
+	width:100%;
+}
+.admin-member-list-table tr th,
+.admin-member-list-table tr td {
+	text-align:center;
+	padding:10px;
+}
+.admin-member-list-table tr th{
+	border-top:1px solid #333;
+	border-bottom:1px solid #dbdbdb;
+}
+.admin-member-list-table tr td{
+	border-bottom:1px solid #dbdbdb;
+}
+.admin-member-list-table tr td a img {
+	height:30px;
+}
+.admin-member-list-table tr td a:hover{
+	color:#ff9696;
+}
+
+/* 프로젝트 상세 보기*/
+.projectview-category{
+	margin-top:25px;
+}
+.project-admin-table{
+	width:100%;
+}
+.project-admin-table tr th,
+.project-admin-table tr td{
+	border:1px solid #dbdbdb;
+	text-align:center;
+	padding:10px;
+	min-height:50px;
+}
+.project-admin-table tr th{
+	background:#f6f6f6;
+}
+.project-thumbnail {
+	
+}
+.project-thumbnail img{
+	width:100%;
+}
+
+.project-content img{/*☆*/
+	width: 100% !important;
+}
+.admin-write-menu{
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #dbdbdb;
+	padding-bottom:10px;
+}
+.admin-write-menu li{
+	width:30%;
+	font-size:16px;
+}
+.admin-write-menu li a:hover {
+	color:#ff9696;
+}
+.project-contnet-tab li{
+	width:50%;
+	text-align: center;
+}
+.project-rewards{
+	border:1px solid #111;
+	border-radius:5px;
+	padding:20px;
+	background:#dbdbdb;
+	margin:30px 100px;
+}
+.project-rewards div{
+}
+/* 회원 상세보기 */
+.member-stat-cheage{
+	margin-top:25px;
+}
+.member-stat-cheage select{
+	font-size: 14px;
+	padding: 2px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.member-stat-cheage a{
+	display:inline-block;
+	background:#ff9696;
+	color:#fff;
+	padding:2px 6px;
+	border-radius:5px;
+}
+
+.member-admin-table{
+	width:100%;
+}
+.member-admin-table tr th,
+.member-admin-table tr td{
+	text-align:center;
+	padding:10px;
+	border:1px solid #dbdbdb;
+}
+.user-profile{
+	height:50px;
+}
+.member-admin-table tr:last-child td{
+	text-align:justify;
+}
+.member-rewardsdiv{
+   width:100%;
+   height:200px;
+   border-bottom:1px solid #dbdbdb;
+   padding:20px;
+   text-align: left;
+}
+.reward-img{
+	float:left;
+	margin:10px 20px 0px 0px;
+}
+.reward-img img{
+	width:130px;
+	height:130px;
+	border:1px solid #dbdbdb;
+	border-radius:50%;
+}
+.reward-project{
+	margin: 20px 0px 5px;
+    font-size: 17px;
+}
+.reward-date{
+	margin-bottom:5px;
+}
+.reward-money{
+	margin-bottom:20px;
+}
+
+.board_write_b{
+	border: none;
+    background: #ff9696;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.write_sb{
+	border: none;
+    background: #ff9696;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.write_lb{
+	border: 1px solid #ff9696;
+    background: none;
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.n_table input{
+	width: 500px;
+    height: 35px;
+    border: 1px solid #969696;
+}
+.event img{    
+	width: 270px;
+    margin: 20px 5px;}

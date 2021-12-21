@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>안재현 홈페이지</title>
+		<script>
+		document.onmousedown=disableclick;
+		status="우클릭 방지";
+		function disableclick(event){
+		if (event.button==2) {
+		alert(status);
+		return false;
+		}
+		}
+		// 개발자 도구(F12) 방지
+		$(function(){
+		$(document).bind('keydown',function(e){
+		if ( e.keyCode == 123) {
+		e.preventDefault();
+		e.returnValue = false;
+		}
+		});
+		});
+
+		</script>
+		<script langauage="Javascript">
+<!-- 
+  function hidestatus(){ 
+  window.status="" 
+  return true 
+  } 
+
+  if (document.layers) 
+  document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT) 
+
+  document.onmouseover=hidestatus 
+  document.onmouseout=hidestatus 
+//--> 
+</script>
+
+	</head>
+	<body>
+	<div oncontextmenu="return false" oncontextmenu="return false" onselectstart="return false"ondragstart="return false">
+		<h1><a href="http://jaehyunahn.dothome.co.kr/home/home.html" onMouseover="return hidestatus()" onfocus="return hidestatus()">웹이력서</a></h1>
+		<h1><a href="http://jaehyunahn.dothome.co.kr/portfolio/index.html">웹이력서2</a></h1>
+		<h1><a href="http://jaehyunahn.dothome.co.kr/trip/index.php">여행지 사이트</a></h1>
+		<h1><a href="http://jaehyunahn.dothome.co.kr/member/member_list.php">멤버관리 연습</a></h1>
+		<h1><a href="http://localhost/snack/snack_list.php">상품관리 연습</a></h1>
+		<h1><a href=""></a></h1>
+	</div>
+	</body>
+	<script language="Javascript">
+
+var statusmsg=""
+function hidestatus(){
+window.status=statusmsg
+return true
+}
+
+</script>
+	
+	<script langauage="Javascript">
+<!-- 
+  function hidestatus(){ 
+  window.status="" 
+  return true 
+  } 
+
+  if (document.layers) 
+  document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT) 
+
+  document.onmouseover=hidestatus 
+  document.onmouseout=hidestatus 
+//--> 
+</script>
+</html>
